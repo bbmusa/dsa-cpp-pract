@@ -1,0 +1,1 @@
+{"name":"Local: High_Accuracy","url":"/home/anton/Documents/dsa cpp/dsa-cpp-pract/arrays/High_Accuracy.cpp","tests":[{"id":1668828609025,"input":"4\n0\n100\n32\n18","output":"0\n2\n1\n0"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/anton/Documents/dsa cpp/dsa-cpp-pract/arrays/High_Accuracy.cpp","group":"local","local":true}
