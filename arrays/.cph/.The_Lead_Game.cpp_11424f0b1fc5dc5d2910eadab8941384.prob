@@ -1,0 +1,1 @@
+{"name":"Local: The_Lead_Game","url":"/home/anton/Documents/dsa cpp/dsa-cpp-pract/arrays/The_Lead_Game.cpp","tests":[{"id":1668965919222,"input":"5\n140 82\n89 134\n90 110\n112 106\n88 90","output":"1 58"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/anton/Documents/dsa cpp/dsa-cpp-pract/arrays/The_Lead_Game.cpp","group":"local","local":true}
