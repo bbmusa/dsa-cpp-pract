@@ -2,27 +2,34 @@
 
 using namespace std;
 
-int main()
-{
-    //code frome here
-    int t,max=0,h=0,x=0,y=0,x1,y1;
-    cin>>t;
-    while(t--)
-    {
-        cin>>x1;
-        cin>>y1;
-        int diff;
-        x=x+x1;
-        y=y+y1;
-        if(x>y)
-            diff = x-y;
-        else
-            diff = y-x;
-        if(diff>max){
-            max=diff;
-            h++;
-        }
-    }
-    cout<<h<<" "<<max<<endl;
-    return 0;
+int main() {
+	int n;
+	cin >> n;
+	vector<int> s(n + 1);
+	vector<int> t(n + 1);
+	s.at(0) = 0;
+	t.at(0) = 0;
+	
+	int max_diff = 0;
+	for (int i = 1; i <= n; i++) {
+	    int num;
+	    cin >> num;
+	    s.at(i) = s.at(i - 1) + num;
+	    cin >> num;
+	    t.at(i) = t.at(i - 1) + num;
+	    
+	    int diff = s.at(i) - t.at(i);
+	    if (abs(max_diff) < abs(diff)) {
+	        max_diff = diff;
+	    }
+	}
+
+	if (max_diff > 0) {
+	    cout << 1 << " ";
+	} else {
+	    cout << 2 << " ";
+	}
+	cout << abs(max_diff) << endl;
+	
+	return 0;
 }
